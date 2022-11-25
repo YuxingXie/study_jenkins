@@ -8,7 +8,7 @@ https://about.gitlab.com/install/#centos-7
 
 安装后gitlab访问地址为http://192.168.80.128 。
 
-## 把这个项目push到gitlab仓库
+## 把本项目push到gitlab仓库
 
 因为这个项目已经在github上了，所以需要增加一个远程仓库地址。
 
@@ -41,3 +41,50 @@ git push
 git pull gitlab master:master
 ```
 所以需要push两次，希望之后有更好的方案。
+
+## centos安装Jenkins服务器
+官网：https://www.jenkins.io/zh/
+### 1. 下载jenkins
+下载jenkins到/root/software/：
+```text
+cd /root/software/
+curl -o jenkins.war https://mirror.xmission.com/jenkins/war-stable/2.346.3/jenkins.war
+```
+
+### 2. 安装jdk
+
+```text
+yum search java|grep jdk
+yum install -y java-1.8.0-openjdk
+```
+### 3. 运行Jenkins
+
+```text
+#可指定端口，默认8080
+java -jar jenkins.war
+```
+
+注意下面这段打印：
+```text
+Jenkins initial setup is required. An admin user has been created and a password generated.
+Please use the following password to proceed to installation:
+
+2c9b11b02243496a9299f650ce304489
+
+This may also be found at: /root/.jenkins/secrets/initialAdminPassword
+
+```
+浏览器访问http://192.168.80.128:8080/ ，输入上面的密码“2c9b11b02243496a9299f650ce304489”，进入新手入门页面。
+点击“安装的插件”，稍等片刻安装完成。
+
+安装完成后，进入“创建第一个管理员用户”，我使用root:123456。然后进入一个暂时搞不懂的工作台页面。
+
+## jenkins dashboard
+
+jenkins的工作台页面出现了一些搞不懂的东西，现在来搞懂它。
+![](https://github.com/YuxingXie/study_jenkins/blob/master/assets/img/jenkins001.png)
+
+jenkins用于流水线或者说自动化的构建。
+
+### 1. item
+一个item即一个任务。点击左侧“新建item”，进入页面。有freestyle project和pipeline两种风格的任务。
