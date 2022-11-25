@@ -62,6 +62,8 @@ yum install -y java-1.8.0-openjdk
 ```text
 #可指定端口，默认8080
 java -jar jenkins.war
+# 或者后台运行
+nohup java -jar jenkins.war &
 ```
 
 注意下面这段打印：
@@ -79,12 +81,24 @@ This may also be found at: /root/.jenkins/secrets/initialAdminPassword
 
 安装完成后，进入“创建第一个管理员用户”，我使用root:123456。然后进入一个暂时搞不懂的工作台页面。
 
-## jenkins dashboard
+注意：不要轻易升级jenkins，说不定就启动不了。有可能是需要jdk版本不一样。
+
+### 4. jenkins dashboard
 
 jenkins的工作台页面出现了一些搞不懂的东西，现在来搞懂它。
 ![](https://github.com/YuxingXie/study_jenkins/blob/master/assets/img/jenkins001.png)
 
 jenkins用于流水线或者说自动化的构建。
 
-### 1. item
-一个item即一个任务。点击左侧“新建item”，进入页面。有freestyle project和pipeline两种风格的任务。
+item ：一个item即一个任务。点击左侧“新建item”，进入页面。有freestyle project和pipeline两种风格的任务。
+
+
+## 搭建测试服务器
+
+之前我的gitlab服务器、jenkins服务器都放在同一个服务器192.168.80.128上，现在测试服务器我仍放同一个服务器上。
+
+##### 从git服务器拉代码
+
+##### 使用maven构建
+
+##### 使用gradle构建
