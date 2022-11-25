@@ -29,7 +29,7 @@ gitlab  http://192.168.80.128/root/study_jenkins.git (push)
 origin  https://github.com/YuxingXie/study_jenkins.git (fetch)
 origin  https://github.com/YuxingXie/study_jenkins.git (push)
 ```
-github上的仓库名叫origin，gitlab的仓库名叫gitlab。
+github上的仓库名（可能不应该叫仓库名而叫remote name）叫origin，gitlab的remote name叫gitlab。
 
 这里还有一个更好的方法，就是gitlab可以从github直接import项目，我直接把github上的study_jenkins项目import过来就好了。
 
