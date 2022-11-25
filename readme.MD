@@ -11,7 +11,7 @@ https://about.gitlab.com/install/#centos-7
 因为这个项目已经在github上了，所以需要增加一个远程仓库地址。
 
 
-首先在在gitlab上新建项目“study_jenkins”，项目名记得和GitHub上一样。
+首先在在gitlab上新建项目“study_jenkins”，项目名记得和GitHub上一样,并创建一个master分支。
 
 然后添加远程仓库地址：
 ```text
@@ -28,3 +28,8 @@ origin  https://github.com/YuxingXie/study_jenkins.git (fetch)
 origin  https://github.com/YuxingXie/study_jenkins.git (push)
 ```
 github上的仓库名叫origin，gitlab的仓库名叫gitlab。
+
+这个时候用git pull,push等命令只会从GitHub推拉，要pull push成功，需要加仓库名：
+```text
+git pull gitlab
+```
