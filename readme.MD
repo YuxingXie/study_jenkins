@@ -125,6 +125,7 @@ jdk也配置一下：
 看完了作者maven构建的jenkins构建，我感觉gradle应该类似吧。自己动手试了一下手动启动一个任务让jenkins编译打包，结果是成功的，不信你看：
 
 ![](https://github.com/YuxingXie/study_jenkins/blob/master/assets/img/jenkins004.png)
+<div align="center">图四：jenkins执行gradle clean和build指令</div>
 
 
 
