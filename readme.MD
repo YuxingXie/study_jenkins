@@ -8,6 +8,8 @@ https://about.gitlab.com/install/#centos-7
 
 安装后gitlab访问地址为http://192.168.80.128 。
 
+用户名/密码：root/12345678
+
 ## 把本项目push到gitlab仓库
 
 因为这个项目已经在github上了，所以需要增加一个远程仓库地址。
