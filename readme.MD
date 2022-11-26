@@ -88,7 +88,6 @@ This may also be found at: /root/.jenkins/secrets/initialAdminPassword
 jenkins的工作台页面出现了一些搞不懂的东西，现在来搞懂它。
 ![](https://github.com/YuxingXie/study_jenkins/blob/master/assets/img/jenkins001.png)
 ![](http://192.168.80.128/root/study_jenkins/-/blob/master/assets/img/jenkins001.png)
-
 jenkins用于流水线或者说自动化的构建。就是说我们的代码提交到gitlab，它帮我们编译、打包、部署，流水线作业，全部完成。
 
 #### 4.1 item
@@ -111,6 +110,9 @@ jenkins用于流水线或者说自动化的构建。就是说我们的代码提�
 因为本研究项目初始化的时候是一个gradle构建的项目，而视频教学使用maven，这个还得靠我自己研究。我先自己配置了一下gradle。
 ![](https://github.com/YuxingXie/study_jenkins/blob/master/assets/img/jenkins002.png)
 ![](http://192.168.80.128/root/study_jenkins/-/blob/master/assets/img/jenkins002.png)
+jdk也配置一下：
+![](https://github.com/YuxingXie/study_jenkins/blob/master/assets/img/jenkins003.png)
+![](http://192.168.80.128/root/study_jenkins/-/blob/master/assets/img/jenkins003.png)
 ##### 插件管理
 添加、删除、禁用或启用Jenkins功能扩展插件。
 ##### 插件管理节点管理
