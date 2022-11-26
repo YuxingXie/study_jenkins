@@ -1,3 +1,7 @@
+参考教程：
+
+[【尚硅谷】2022版Jenkins教程（从配置到实战）](!https://www.youtube.com/playlist?list=PLmOn9nNkQxJH7_AY3ZDTWgD5FIodz1Loh)
+
 ## 安装gitLab
 
 https://about.gitlab.com/install/#centos-7
@@ -155,14 +159,7 @@ jdk,git这些的安装配置不讲了，因为视频作者讲过。
 结果见图五、图六。成功！
 
 
-## 搭建测试服务器
+### 6. 自动任务
 
-之前我的gitlab服务器、jenkins服务器都放在同一个服务器192.168.80.128上，现在测试服务器我仍放同一个服务器上。
+上一步的手动任务完成了gradle构建的程序的打包，但这是不够的，我们需要jenkins能够自动部署到服务器。
 
-
-
-##### 从git服务器拉代码
-
-##### 使用maven构建
-
-##### 使用gradle构建
