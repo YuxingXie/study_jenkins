@@ -120,7 +120,7 @@ jdk也配置一下：
 ##### 插件管理节点管理
 添加、删除、控制和监视系统运行任务的节点。
 
-### 5. 配置运行一次gradle程序手动构建
+### 5. 配置并手动运行一次gradle构建任务
 
 看完了视频作者jenkins构建的maven项目过程，我感觉gradle应该类似吧。自己动手试了一下手动启动一个任务让jenkins编译打包，结果是成功的，不信你看：
 
@@ -130,6 +130,30 @@ jdk也配置一下：
 
 ![](https://github.com/YuxingXie/study_jenkins/blob/master/assets/img/jenkins005.png)
 <div align="center">图五：jenkins打好的jar包</div>
+
+过程还好不算太坎坷，下面一步步介绍。
+
+jdk,git这些的安装配置不讲了，因为视频作者讲过。
+
+#### 5.1 第一步：新建任务
+
+选“构建一个自由风格的软件项目”，名称叫“gradleBuild”吧。
+
+#### 5.2 第二步：配置源码管理
+
+让jenkins知道代码从哪里拉过来。在“源码管理”中选“git”，把仓库地址，用户名密码，拉取的分支都填进去。
+![](https://github.com/YuxingXie/study_jenkins/blob/master/assets/img/jenkins006.png)
+
+#### 5.3 第三步：配置构建环境
+
+因为使用gradle，点击“增加构建步骤”，gradle选7.5.1,没别的原因，保持和我开发环境上一样。
+在tasks里面填上“clean build”。
+![](https://github.com/YuxingXie/study_jenkins/blob/master/assets/img/jenkins007.png)
+
+#### 5.4 第四步：启动任务
+回到dashboard,可以看到刚建好的任务“gradleBuild”，点击右侧的绿色三角形按钮，开始构建。
+结果见图五、图六。成功！
+
 
 ## 搭建测试服务器
 
