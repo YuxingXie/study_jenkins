@@ -122,13 +122,14 @@ jdk也配置一下：
 
 ### 5. 配置运行一次gradle程序手动构建
 
-看完了作者maven构建的jenkins构建，我感觉gradle应该类似吧。自己动手试了一下手动启动一个任务让jenkins编译打包，结果是成功的，不信你看：
+看完了视频作者jenkins构建的maven项目过程，我感觉gradle应该类似吧。自己动手试了一下手动启动一个任务让jenkins编译打包，结果是成功的，不信你看：
 
 ![](https://github.com/YuxingXie/study_jenkins/blob/master/assets/img/jenkins004.png)
 <div align="center">图四：jenkins执行gradle clean和build指令</div>
 
 
-
+![](https://github.com/YuxingXie/study_jenkins/blob/master/assets/img/jenkins005.png)
+<div align="center">图五：jenkins打好的jar包</div>
 
 ## 搭建测试服务器
 
