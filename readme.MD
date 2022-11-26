@@ -87,15 +87,40 @@ This may also be found at: /root/.jenkins/secrets/initialAdminPassword
 
 jenkins的工作台页面出现了一些搞不懂的东西，现在来搞懂它。
 ![](https://github.com/YuxingXie/study_jenkins/blob/master/assets/img/jenkins001.png)
+![](http://192.168.80.128/root/study_jenkins/-/blob/master/assets/img/jenkins001.png)
 
-jenkins用于流水线或者说自动化的构建。
+jenkins用于流水线或者说自动化的构建。就是说我们的代码提交到gitlab，它帮我们编译、打包、部署，流水线作业，全部完成。
 
-item ：一个item即一个任务。点击左侧“新建item”，进入页面。有freestyle project和pipeline两种风格的任务。
+#### 4.1 item
 
+一个item即一个任务。点击左侧“新建item”，进入页面。有freestyle project和pipeline两种风格的任务。
+
+#### 4.2 Manage Jenkins
+
+系统配置下有如下按钮
+
+##### 系统配置：配置全局设置和路径
+
+现在点进去看一下，基本还看不明白。
+
+##### 全局工具配置：工具配置，包括它们的位置和自动安装器
+
+点进去看一下，这个比较好理解一些。既然jenkins是帮我们一条龙编译、打包、部署，肯定离不开这些相关的工具。
+比如maven或gradle，jdk环境，连接代码仓库和生产环境的工具等应该都需要的。
+
+因为本研究项目初始化的时候是一个gradle构建的项目，而视频教学使用maven，这个还得靠我自己研究。我先自己配置了一下gradle。
+![](https://github.com/YuxingXie/study_jenkins/blob/master/assets/img/jenkins002.png)
+![](http://192.168.80.128/root/study_jenkins/-/blob/master/assets/img/jenkins002.png)
+##### 插件管理
+添加、删除、禁用或启用Jenkins功能扩展插件。
+##### 插件管理节点管理
+添加、删除、控制和监视系统运行任务的节点。
 
 ## 搭建测试服务器
 
 之前我的gitlab服务器、jenkins服务器都放在同一个服务器192.168.80.128上，现在测试服务器我仍放同一个服务器上。
+
+
 
 ##### 从git服务器拉代码
 
