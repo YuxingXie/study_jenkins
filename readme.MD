@@ -120,6 +120,15 @@ jdk也配置一下：
 ##### 插件管理节点管理
 添加、删除、控制和监视系统运行任务的节点。
 
+### 5. 配置运行一次gradle程序手动构建
+
+看完了作者maven构建的jenkins构建，我感觉gradle应该类似吧。自己动手试了一下手动启动一个任务让jenkins编译打包，结果是成功的，不信你看：
+
+![](https://github.com/YuxingXie/study_jenkins/blob/master/assets/img/jenkins004.png)
+
+
+
+
 ## 搭建测试服务器
 
 之前我的gitlab服务器、jenkins服务器都放在同一个服务器192.168.80.128上，现在测试服务器我仍放同一个服务器上。
